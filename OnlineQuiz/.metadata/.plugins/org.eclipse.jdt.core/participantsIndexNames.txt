@@ -1,0 +1,7 @@
+INDEX VERSION 1.130
+D:\COURSES\3Java\practice ee\OnlineQuiz\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2389236961.index
+\NoteTaker\src\main\resources
+D:\COURSES\3Java\practice ee\OnlineQuiz\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1339033454.index
+\OnlineTest\src\main\resources
+D:\COURSES\3Java\practice ee\OnlineQuiz\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1107935846.index
+\OnlineTestx\src

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="post" action="LoginServlet">
+<legend>LoginForm</legend>
+<fieldset>
+<input type="text" name="name" placeholder="enter username">
+<input type="password" name="pwd" placeholder="enter password">
+<input type="submit">
+</fieldset>
+</form>
+</body>
+</html>

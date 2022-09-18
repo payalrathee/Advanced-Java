@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+D:\COURSES\3Java\practice ee\OnlineQuiz\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1479006810.index
+420302391.index
+3474857776.index
+2081450929.index
+2471806641.index
+3156776374.index
+1098702063.index
+3006094525.index

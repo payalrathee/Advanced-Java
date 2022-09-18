@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="index.css" rel="stylesheet">
+</head>
+<body>
+<marquee>WELCOME TO MY WEBSITE</marquee>
+<a href="shop1.html">click here to shop</a>
+</body>
+</html>

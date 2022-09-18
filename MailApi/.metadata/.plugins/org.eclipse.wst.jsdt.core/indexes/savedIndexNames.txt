@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\COURSES\3Java\practice ee\MailApi\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+957448960.index
+3149756314.index
+3402562109.index
+3975519135.index
+1326591630.index
+195292764.index

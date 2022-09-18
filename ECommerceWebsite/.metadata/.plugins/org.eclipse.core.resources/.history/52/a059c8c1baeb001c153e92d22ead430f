@@ -1,0 +1,35 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Shop</title>
+<style>
+#items-wrapper {
+width: 90%;
+margin: auto;
+}
+.items {
+display: inline-block;
+width: 200px;
+height: 250px;
+margin: 10px;
+border-radius: 5px;
+box-shadow: 0px 0px 5px #aaa;
+}
+.items:hover {
+box-shadow: 0px 0px 8px rgb(4, 49, 51);
+}
+.img {
+border-radius: 5px;
+height: 100%;
+width: 100%;
+}
+</style>
+</head>
+<body>
+
+
+</body>
+</html>

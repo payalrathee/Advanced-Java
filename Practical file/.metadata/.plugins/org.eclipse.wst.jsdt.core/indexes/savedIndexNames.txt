@@ -1,0 +1,15 @@
+INDEX VERSION 1.4+D:\COURSES\3Java\practice ee\Practical file\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2213957570.index
+2622610551.index
+2594720778.index
+3947630317.index
+3848559484.index
+1358104652.index
+648115436.index
+866662937.index
+1500317452.index
+3290355648.index
+3737428319.index
+3158426439.index
+1715756034.index
+1721887971.index

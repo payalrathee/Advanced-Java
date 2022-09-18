@@ -1,0 +1,16 @@
+<taglib>
+<tag>
+<name>sum</name>
+<tagclass>p1.Sum.java</tagclass>
+<attribute>
+<name>num1</name>
+<required>true</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+<attribute>
+<name>num2</name>
+<required>true</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+</tag>
+</taglib>

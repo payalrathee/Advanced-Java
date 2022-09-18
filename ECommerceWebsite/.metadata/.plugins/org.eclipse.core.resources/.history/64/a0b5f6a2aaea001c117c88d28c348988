@@ -1,0 +1,78 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Header</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Prompt&display=swap"
+	rel="stylesheet">
+
+<style>
+#header {
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+}
+
+#name-wrapper {
+	width: 10%;
+	margin: auto;
+}
+
+#name {
+	color: black;
+	padding: 4px;
+	margin: 10px;
+	font-size: 35px;
+	font-family: 'Prompt', sans-serif;
+}
+
+#navbar {
+	background-color: antiquewhite;
+	display: flex;
+	justify-content: center;
+	height: 38px;
+}
+
+.menu-item {
+	padding: 0px 5px;
+	margin: 5px 10px;
+	position: relative;
+	top: 8px;
+}
+menu-item:focus
+{
+	color:red;
+}
+
+#signup {
+	position: absolute;
+	right: 20px;
+}
+</style>
+<link href="utilities.css" rel="stylesheet">
+</head>
+<body>
+	<header id="header">
+	<div id="name-wrapper">
+		<!-- <span><img id="logo" src="logo4.png"></span> -->
+		<span id="name">ELLA</span>
+	</div>
+	<div id="navbar-wrapper">
+		<nav id="navbar">
+		 <span><a class="menu-item link" href="index.jsp">Home</a></span>
+		 <span><a class="menu-item link" href="#">Blog</a></span>
+		 <span><a class="menu-item link" href="#">Shop</a></span> 
+		 <span><a class="menu-item link" href="#">About</a></span>
+		 <span><a class="menu-item link" href="#">Contact</a></span>
+		<!-- <span><a class="menu-item" id="signup" href="#">Sign In</a></span> --> </nav>
+	</div>
+	</header>
+</body>
+</html>

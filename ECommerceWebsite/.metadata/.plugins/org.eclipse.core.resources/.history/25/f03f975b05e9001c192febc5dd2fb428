@@ -1,0 +1,81 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import bean.SignInBean;
+import connections.ConnectionProvider;
+
+public class SignInDao {
+	
+	public static boolean adminLogin(SignInBean b)
+	{
+		boolean isAdminValid=false;
+		Connection con=null;
+		
+		try
+		{
+			con=ConnectionProvider.provideConnection();
+			PreparedStatement p=con.prepareStatement("select * from admin where email=? and pwd=?;");
+			p.setString(1,b.getEmail());
+			p.setString(2,b.getPwd());
+			ResultSet rs=p.executeQuery();
+			if(rs.next())
+				isAdminValid=true;
+		}
+		catch(SQLException e)
+		{
+			System.out.println(e);
+		}
+		finally
+		{
+			try
+			{
+				con.close();
+			}
+			catch(SQLException e)
+			{
+				System.out.println(e);
+			}
+		}
+		
+		return isAdminValid;
+	}
+	
+	public static boolean buyerLogin(SignInBean b)
+	{
+		boolean isBuyerValid=false;
+		Connection con=null;
+		
+		try
+		{
+			con=ConnectionProvider.provideConnection();
+			PreparedStatement p=con.prepareStatement("select * from buyers where email=? and pwd=?;");
+			p.setString(1,b.getEmail());
+			p.setString(2,b.getPwd());
+			ResultSet rs=p.executeQuery();
+			if(rs.next())
+				isBuyerValid=true;
+		}
+		catch(SQLException e)
+		{
+			System.out.println(e);
+		}
+		finally
+		{
+			try
+			{
+				con.close();
+			}
+			catch(SQLException e)
+			{
+				System.out.println(e);
+			}
+		}
+		
+		return isBuyerValid;
+	}
+
+}

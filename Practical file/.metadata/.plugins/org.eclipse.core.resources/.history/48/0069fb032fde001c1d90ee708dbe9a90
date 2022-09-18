@@ -1,0 +1,11 @@
+package dao;
+
+import beans.RegisterBean;
+
+public class RegisterDao {
+
+	public static boolean register(RegisterBean b)
+	{
+		
+	}
+}

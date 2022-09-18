@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <title>Register Form</title>
+    <link href="registerForm.css" rel="stylesheet">
+</head>
+
+<body bgcolor="#263238" style="padding:20px;">
+    <font color="#90A4AE">
+        <center>
+            <h1>SignUp</h1>
+        </center>
+    </font>
+    <form action="MyServlet" id="form">
+        <div>
+            <p class="tag">Full Name:</p>
+            <br>
+            <input class="input" type="text" required name="text" placeholder="enter your name" autofocus>
+        </div>
+        <div>
+            <p class="tag">Email:</p>
+            <br>
+            <input class="input" type="email" required name="email" placeholder="enter your email-
+
+id">
+        </div>
+        <div>
+            <p class="tag">Password:</p>
+            <br>
+            <input class="input" required maxlength="8" type="password" name="pass" placeholder="enter password">
+        </div>
+        <div>
+            <p class="tag">Confirm
+
+                Password:</p>
+            <br>
+            <input class="input" required maxlenght="8" type="password" name="confirm" placeholder="confirm password">
+
+        </div>
+        <div>
+            <p class="tag">Gender:</p>
+            <br>
+            <input type="radio" name="male">Male
+            <input type="radio" name="male">Female
+            <input type="radio" name="male">Others
+
+        </div>
+        <div>
+            <p class="tag">Date of birth:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAge:</p>
+            <input type="date" name="date" min="1998-12-31" max="2000-12-31">&nbsp&nbsp&nbsp&nbsp
+            <input style="height:25px;
+        border-color:#D7CCC8;
+        background-color:#DCEDC8;" type="number" name="age" placeholder="Age" max="24" min="18">
+
+        </div>
+        <div>
+            <p class="tag">Continent:</p>
+            <input list="dl" name="continent">
+            <datalist id="dl">
+                <option />Africa
+                <option />Antarctica
+                <option />Asia
+                <option />Australia
+                <option />Europe
+                <option />North America
+                <option />South America
+            </datalist>
+        </div>
+        <div>
+            <p class="tag">Security
+
+                Question:</p>
+            <br>
+            <select id="list" name="list">
+                <option name="o1" value="1">enter the security questions
+
+                    in the area</option>
+                <option name="o2" value="2">option2</option>
+                <option name="o3" value="3">option3</option>
+                <option name="o4" value="4">option4</option>
+            </select>
+
+            <textarea name="txtar" rows="4" cols="50"></textarea>
+        </div>
+        <div style="padding:10px;">
+            <input type="checkbox" name="check" value="accept" required>I agree to
+
+            accept terms and condtions
+        </div>
+        <div>
+            <input type="file" name="file" value="Choose file">
+        </div>
+        <div>
+            <button class="button" type="submit" onclick="alert('Successfuly submitted')">Register</button>
+            <input class="button" type="reset" name="reset" value="Reset">
+        </div>
+
+    </form>
+</body>
+
+</html>

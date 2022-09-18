@@ -1,0 +1,23 @@
+package crudOperations;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import beans.Student;
+import utilities.SessionFactoryProvider;
+
+public class Retrieve {
+	public static void main(String[] args)
+	{
+		SessionFactory sessionFactory=SessionFactoryProvider.provideSessionFactory();
+		Session session=sessionFactory.openSession();
+		
+		Student s=session.get(Student.class, 101);
+		System.out.println(s.getId());
+		System.out.println(s.getName());
+		System.out.println(s.getStd());
+		
+		sessionFactory.close();
+	}
+
+
+}

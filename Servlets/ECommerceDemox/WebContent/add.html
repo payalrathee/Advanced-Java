@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add product</title>
+<style>
+body
+{
+background-image:url('bg1.jpg');
+backgorund-repeat:no-repeat;
+background-size: cover;
+}
+h1
+{
+color:white;
+}
+form
+{
+padding:50px;
+margin:50px;
+}
+input
+{
+width:30%;
+padding:8px;
+margin:10px;
+}
+#submit
+{
+background-color:rgb(0,0,10);
+color:white;
+}
+#submit:hover
+{
+background-color:rgb(0,0,30);
+color:white;
+}
+</style>
+</head>
+<body>
+<form action="AddServlet" method="post">
+<h1>ADD PRODUCT</h1>
+<input placeholder="enter name" name="name"><br>
+<input placeholder="enter price" name="price"><br>
+<input placeholder="product image" name="url"><br>
+<input id="submit" type="submit" value="Add product">
+</form>
+</body>
+</html>

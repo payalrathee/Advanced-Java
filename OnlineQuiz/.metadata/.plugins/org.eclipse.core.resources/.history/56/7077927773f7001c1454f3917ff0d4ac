@@ -1,0 +1,118 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@page import="org.hibernate.SessionFactory" %>
+    <%@page import="org.hibernate.Query" %>
+    <%@page import="org.hibernate.Session" %>
+    <%@page import="java.util.List" %>
+    <%@page import="beans.Question" %>
+<%@page import="connections.SessionFactoryProvider" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="display.css" rel="stylesheet">
+    <style>
+ 
+}
+aside
+{
+    background-color: bisque;
+    width:100%;
+    height:15vh;
+}
+.wrapper
+{
+    margin:6%;
+}
+.ques-wrapper
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    width:80%;
+    margin:auto;
+    height:60vh;
+    padding:4%;
+    box-shadow: 0px 0px 5px #aaa;
+}
+.ques
+{
+    padding:2%;
+    color:rgb(0, 0, 0);
+}
+.op{
+    padding: 2%;
+    color: gray;
+}
+    </style>
+</head>
+
+<body>
+    <aside>
+
+    </aside>
+    
+<%
+SessionFactory factory=SessionFactoryProvider.provideSessionFactory();
+Session s=factory.openSession();
+
+Query q = s.createQuery("from Question");
+List<Question> questions=q.list();
+ 
+
+for(Question ques:questions)
+{
+	%>
+    
+        <div class="ques-wrapper">
+            <div class="ques text">Java is a</div>
+            <div class="op text">
+                <input type="radio" name="1" value="101">programming language
+            </div>
+            <div class="op text">
+                <input type="radio" name="1" value="102">scripting language
+            </div>
+            <div class="op text">
+                <input type="radio" name="1" value="103">low level language
+            </div>
+            <div class="op text">
+                <input type="radio" name="1" value="104">query language
+            </div>
+        </div>
+        <%
+}
+%>
+</div>
+</body>
+
+</html>
+
+
+<%
+SessionFactory factory=SessionFactoryProvider.provideSessionFactory();
+Session s=factory.openSession();
+
+Query q = s.createQuery("from Question");
+List<Question> questions=q.list();
+
+for(Question ques:questions)
+{
+	%>
+	Question : 
+	<%=ques.getQues() %> : <br>
+	<%=ques.getChoices().get(0).getChoice() %><br>
+	<%=ques.getChoices().get(1).getChoice() %><br>
+	<%=ques.getChoices().get(2).getChoice() %><br>
+	<%=ques.getChoices().get(3).getChoice() %><br>
+	Answer : 
+	<%=ques.getAns().getChoice() %>
+	
+	<%
+}
+%>

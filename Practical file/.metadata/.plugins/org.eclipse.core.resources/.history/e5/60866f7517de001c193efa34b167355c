@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<marquee>WELCOME</marquee>
+<form method="post" action="MyServlet">
+<input type="text" name="name">
+<input type="submit">
+<a href="MyServlet2?name=payal">click</a>
+</form>
+</body>
+</html>

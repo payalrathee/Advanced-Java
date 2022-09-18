@@ -1,0 +1,18 @@
+package connections;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class SessionFactoryProvider {
+	private SessionFactoryProvider() {}
+	
+	public static SessionFactory provideFactory()
+	{
+		if(factory==null)
+		{
+			factory=new Configuration().configure().buildSessionFactory();
+		}
+		return factory;
+	}
+
+}

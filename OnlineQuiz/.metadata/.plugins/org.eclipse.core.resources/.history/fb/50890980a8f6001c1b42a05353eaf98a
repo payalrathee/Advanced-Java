@@ -1,0 +1,57 @@
+package beans;
+
+import java.util.List;
+
+import javax.persistence.*;
+
+@Entity
+public class Question {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private int id;
+	private String ques;
+	private List<Option> options;
+	private Option ans;
+	private Topic topic;
+	public Question(int id, String ques, List<Option> options, Option ans, Topic topic) {
+		this.id = id;
+		this.ques = ques;
+		this.options = options;
+		this.ans = ans;
+		this.topic = topic;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getQues() {
+		return ques;
+	}
+	public void setQues(String ques) {
+		this.ques = ques;
+	}
+	public List<Option> getOptions() {
+		return options;
+	}
+	public void setOptions(List<Option> options) {
+		this.options = options;
+	}
+	public Option getAns() {
+		return ans;
+	}
+	public void setAns(Option ans) {
+		this.ans = ans;
+	}
+	public Topic getTopic() {
+		return topic;
+	}
+	public void setTopic(Topic topic) {
+		this.topic = topic;
+	}
+	
+	
+	
+	
+}

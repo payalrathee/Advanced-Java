@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>StarBuzz Reservation</title>
+    </head>
+    <body topmargin="8%" leftmargin="30%" rightmargin="30%" background="https://images.unsplash.com/photo-1611653683051-17e3b2d6e8ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+    <center>
+    <form style="background-color:BLACK;"><br>
+        <font color="white" size="6px">RESERVATION</font><br>
+        <hr width=20% color="white" size="1px"><br>
+        <table cellspacing="7px" cellpadding="7px" border="0">
+            <tr>
+                <td>
+                  <font color="white"> Name</font>
+                </td>
+                <td>
+                    <input type ="text" name="firstname"  placeholder="Your name*"  required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <font color="white">Email</font>
+                </td>
+                <td>
+                    <input type ="email" name="firstname"  placeholder="Your email*"  required>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                  <font color="white"> Phone Number</font>
+              </td>  
+              <td>
+                <input type ="text" name="firstname"  placeholder="Your number*" required>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                    <font color="white">Booking date</font>
+                </td>
+                <td>
+                    <input type ="date" name="firstname"  placeholder="Booking date*"  required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <font color="white">Booking time</font>
+                </td>
+                <td>
+                    <input type ="time" name="firstname"  placeholder="Booking time*" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type ="text" name="firstname"  placeholder="Number of adults*" required>
+                </td>
+                <td>
+                    <input type ="text" name="firstname"  placeholder="Number of children*"  required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button style="background-color:#FFD500; width: 380px;height: 27px;">Reserve a table</button>
+                </td>
+            </tr>
+        </table><br><br>
+    </form>
+    </center>
+    </body>
+</html>

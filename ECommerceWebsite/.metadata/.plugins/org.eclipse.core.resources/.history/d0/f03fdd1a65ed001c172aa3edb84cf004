@@ -1,0 +1,62 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@page import="java.util.ArrayList"> 
+<%@include file="header.jsp" %>
+<%
+    if(session.getAttribute("email")!=null)
+    	{%>
+    	<%@include file="dp.jsp" %>
+    	<%}
+    else
+    	{
+    	%>
+    	<%@include file="SiginPart.jsp" %>
+    	<%
+    	}
+    	%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link href="utilities.css" rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Admin Panel</title>
+</head>
+<body>
+<aside id="update-panel">
+        <section class="panel">
+            <h1>Add Product</h1>
+            <form method="post" action="admin.jsp">
+                <input type="text" name="price" placeholder="enter price" class="inputs"> <br>
+                <input type="text" name="url" placeholder="enter url" class="inputs"><br>
+                <input type="submit" value="Add" class="button">
+            </form>
+        </section>
+        <section class="panel">
+            <h1>Add Product</h1>
+            <form method="post" action="admin.jsp">
+                <input type="text" name="price" placeholder="enter price" class="inputs"> <br>
+                <input type="text" name="url" placeholder="enter url" class="inputs"><br>
+                <input type="submit" value="Add" class="button">
+            </form>
+        </section>
+    </aside>
+    <main id="shop-panel">
+	<%
+	ArrayList<ArrayList<String>> products=ViewDao.view();
+	%>
+<div id="items-wrapper">
+		<%
+        for(int i=0;i<products.size();i++)
+        {
+        %>
+    <div class="items">
+        <img class="img" src="<%= products.get(i).get(2)%>">
+        <span class="desc">Product Id : <%= products.get(i).get(0)%></span>
+    	<span class="desc">Price : <%= products.get(i).get(1)%></span>
+    </div>
+    <%} %>
+</div>
+    </main>
+
+</body>
+</html>

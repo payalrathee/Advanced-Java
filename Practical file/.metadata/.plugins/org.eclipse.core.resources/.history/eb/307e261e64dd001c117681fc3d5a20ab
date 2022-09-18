@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="SimpleCalculatorServlet" method="post">
+<h1>SIMPLE CALCULATOR</h1>
+Input A : <input type="text" name="inputA">
+Input B : <input type="text" name="inputB">
+Select the operation:
+<input type="radio" value="add"> Addition
+<input type="text" value="sub"> Subtraction
+<input type="text" value="mul"> Multiplication 
+<input type="text" value="div"> Division
+<input type="submit" value="Check result">
+</form>
+</body>
+</html>

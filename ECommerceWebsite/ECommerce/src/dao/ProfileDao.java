@@ -1,0 +1,92 @@
+package dao;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import bean.SignUpBean;
+import connections.ConnectionProvider;
+
+public class ProfileDao {
+	public static SignUpBean fetchAdminData(String email)
+	{
+		SignUpBean b=new SignUpBean();
+		Connection con=null;
+		
+		try
+		{
+			con=ConnectionProvider.provideConnection();
+			PreparedStatement p=con.prepareStatement("select * from admin where email=?;");
+			p.setString(1, email);
+			ResultSet rs=p.executeQuery();
+			if(rs.next())
+			{
+				b.setId(rs.getInt(1));
+				b.setUsername(rs.getString(2));
+				b.setFname(rs.getString(3));
+				b.setLname(rs.getString(4));
+				b.setMobile(rs.getString(5));
+				b.setEmail(rs.getString(6));
+				b.setPwd(rs.getString(7));
+				b.setDp(rs.getString(8));
+			}
+		}
+		catch(SQLException e)
+		{
+			System.out.println(e);
+		}
+		finally
+		{
+			try
+			{
+				con.close();
+			}
+			catch(SQLException e)
+			{
+				System.out.println(e);
+			}
+		}
+		return b;
+	}
+	
+	public static SignUpBean fetchBuyerData(String email)
+	{
+		SignUpBean b=new SignUpBean();
+		Connection con=null;
+		
+		try
+		{
+			con=ConnectionProvider.provideConnection();
+			PreparedStatement p=con.prepareStatement("select * from buyers where email=?;");
+			p.setString(1, email);
+			ResultSet rs=p.executeQuery();
+			if(rs.next())
+			{
+				b.setEmail(rs.getString(1));
+				b.setUsername(rs.getString(2));
+				b.setFname(rs.getString(3));
+				b.setLname(rs.getString(4));
+				b.setMobile(rs.getString(5));
+				b.setPwd(rs.getString(6));
+				b.setDp(rs.getString(7));
+			}
+		}
+		catch(SQLException e)
+		{
+			System.out.println(e);
+		}
+		finally
+		{
+			try
+			{
+				con.close();
+			}
+			catch(SQLException e)
+			{
+				System.out.println(e);
+			}
+		}
+		return b;
+	}
+
+}

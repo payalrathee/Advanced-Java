@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+<<<<<<< HEAD
+locationorg.eclipse.jst.server.tomcat.runtime.70=C\:/Program Files/Apache Software Foundation/apache-tomcat-7.0.32
+locationorg.eclipse.jst.server.tomcat.runtime.90=C\:/Program Files/Apache Software Foundation/Tomcat 9.0
+=======
+locationorg.eclipse.jst.server.tomcat.runtime.70=C\:/Program Files/apache tomcat v7/apache-tomcat-7.0.0
+>>>>>>> 7b85307 (initial commit)
