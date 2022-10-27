@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;DownloadProject/WebContent/files/Head First HTML and CSS, 2nd Edition by Elisabeth Robson, Eric Freeman (z-lib.org).pdf&apos; to &apos;hfj.pdf&apos;" description="Rename resource &apos;Head First HTML and CSS, 2nd Edition by Elisabeth Robson, Eric Freeman (z-lib.org).pdf&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/files/Head First HTML and CSS, 2nd Edition by Elisabeth Robson, Eric Freeman (z-lib.org).pdf" name="hfj.pdf" stamp="1651619833168" updateReferences="true"/>
-</session>

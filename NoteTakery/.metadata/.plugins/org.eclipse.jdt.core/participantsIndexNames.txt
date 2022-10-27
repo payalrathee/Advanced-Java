@@ -1,3 +1,0 @@
-INDEX VERSION 1.130
-D:\COURSES\3Java\practice ee\NoteTakery\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2049496536.index
-\NotesTaker\src\main\resources

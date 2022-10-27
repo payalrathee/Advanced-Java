@@ -1,7 +1,0 @@
-INDEX VERSION 1.4+D:\COURSES\3Java\practice ee\NoteTakery\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-3399636592.index
-1160960451.index
-2525901440.index
-841984319.index
-2796767606.index
-3012766557.index

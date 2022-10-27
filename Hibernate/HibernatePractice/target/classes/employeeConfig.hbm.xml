@@ -3,6 +3,6 @@
 <hibernate-mapping>
     <class name="beans.Employee" table="employee_details">
         <id name="id"></id>
-        <property name="name"/>
+        <property name="name"></property>
     </class>
 </hibernate-mapping>

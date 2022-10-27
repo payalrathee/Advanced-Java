@@ -1,9 +1,0 @@
-@charset "ISO-8859-1";
-.purple
-{
-	backgroundr-color:black;
-}
-body
-{
-	background:black;
-}

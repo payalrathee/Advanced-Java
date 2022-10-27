@@ -55,45 +55,45 @@ public class App
 
 
         //*****************MANY TO MANY********************
-//        Pupil p1=new Pupil(1011,"Sneha",null);
-//        Pupil p2=new Pupil(2012,"Ganesh",null);
-//        Pupil p3=new Pupil(2452,"Danish",null);
-//        Pupil p4=new Pupil(9932,"Prerna",null);
-//        List<Pupil> pupils1=new ArrayList<>();
-//        pupils1.add(p1);pupils1.add(p3);
-//        List<Pupil> pupils2=new ArrayList<>();
-//        pupils1.add(p2);pupils1.add(p4);
-//
-//
-//        Course c1=new Course(110,"Spring",2,null);
-//        Course c2=new Course(132,"Hibernate",1,null);
-//        Course c3=new Course(242,"Django",2,null);
-//        Course c4=new Course(562,"Mysql",1,null);
-//        List<Course> courses1=new ArrayList<>();
-//        courses1.add(c2);courses1.add(c3);
-//        List<Course> courses2=new ArrayList<>();
-//        courses2.add(c1);courses2.add(c4);
-//
-//        p1.setCourses(courses1);
-//        p2.setCourses(courses2);
-//        p3.setCourses(courses1);
-//        p4.setCourses(courses2);
-//
-//        c1.setPupils(pupils2);
-//        c2.setPupils(pupils1);
-//        c3.setPupils(pupils1);
-//        c4.setPupils(pupils2);
-//
-//        session.save(p1);
-//        session.save(p2);
-//        session.save(p3);
-//        session.save(p4);
+        Pupil p1=new Pupil(1011,"Sneha",null);
+        Pupil p2=new Pupil(2012,"Ganesh",null);
+        Pupil p3=new Pupil(2452,"Danish",null);
+        Pupil p4=new Pupil(9932,"Prerna",null);
+        List<Pupil> pupils1=new ArrayList<>();
+        pupils1.add(p1);pupils1.add(p3);
+        List<Pupil> pupils2=new ArrayList<>();
+        pupils1.add(p2);pupils1.add(p4);
 
-        //*****************EMBEDDABLE********************
-        Name name=new Name("Bhanu","Pratap","Singh");
-        Person p=new Person(1,name);
-        session.save(p);
 
+        Course c1=new Course(110,"Spring",2,null);
+        Course c2=new Course(132,"Hibernate",1,null);
+        Course c3=new Course(242,"Django",2,null);
+        Course c4=new Course(562,"Mysql",1,null);
+        List<Course> courses1=new ArrayList<>();
+        courses1.add(c2);courses1.add(c3);
+        List<Course> courses2=new ArrayList<>();
+        courses2.add(c1);courses2.add(c4);
+
+        p1.setCourses(courses1);
+        p2.setCourses(courses2);
+        p3.setCourses(courses1);
+        p4.setCourses(courses2);
+
+        c1.setPupils(pupils2);
+        c2.setPupils(pupils1);
+        c3.setPupils(pupils1);
+        c4.setPupils(pupils2);
+
+        session.save(p1);
+        session.save(p2);
+        session.save(p3);
+        session.save(p4);
+
+       // *****************EMBEDDABLE********************
+//        Name name=new Name("Bhanu","Pratap","Singh");
+//        Person p=new Person(1,name);
+//        session.save(p);
+//
         t.commit();
 
     }
