@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<<<<<<< HEAD
-<fullyQualifiedTypeName name="com.oreilly.servlet.MultipartRequest"/>
-<fullyQualifiedTypeName name="javax.servlet.http.Part"/>
-<fullyQualifiedTypeName name="javax.servlet.annotation.MultipartConfig"/>
-<fullyQualifiedTypeName name="java.io.PrintWriter"/>
-<fullyQualifiedTypeName name="java.io.File"/>
-<fullyQualifiedTypeName name="java.io.FileInputStream"/>
-<fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
-<fullyQualifiedTypeName name="java.io.OutputStream"/>
-=======
-<fullyQualifiedTypeName name="java.io.PrintWriter"/>
->>>>>>> 7b85307 (initial commit)
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="com.oreilly.servlet.MultipartRequest"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
 </qualifiedTypeNameHistroy>

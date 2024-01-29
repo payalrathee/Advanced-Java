@@ -1,32 +1,8 @@
-INDEX VERSION 1.4+D:\COURSES\3Java\practice ee\Servletx\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-507215059.index
-<<<<<<< HEAD
-1402902194.index
-2467722143.index
-=======
-2467722143.index
-118744666.index
->>>>>>> 7b85307 (initial commit)
-3936455270.index
-1603682296.index
-4145475189.index
-444181140.index
-2215780130.index
-4152163026.index
-3023173449.index
-1051018673.index
-2823277717.index
-<<<<<<< HEAD
-2200762043.index
-39949637.index
-=======
->>>>>>> 7b85307 (initial commit)
-2039886123.index
-866810585.index
-2131906909.index
-2670870100.index
-<<<<<<< HEAD
-118744666.index
-=======
-1402902194.index
->>>>>>> 7b85307 (initial commit)
+INDEX VERSION 1.4+C:\Work\Advanced-Java\Servletx\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2369406975.index
+1436496286.index
+4200856590.index
+4184521891.index
+3141465739.index
+4275799593.index
+0.index

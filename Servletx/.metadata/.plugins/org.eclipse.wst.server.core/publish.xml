@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <publish-info>
-<<<<<<< HEAD
   <server id="Tomcat v9.0 Server at localhost" path="publish1.dat"/>
-=======
->>>>>>> 7b85307 (initial commit)
-  <server id="Tomcat v7.0 Server at localhost" path="publish0.dat"/>
 </publish-info>
