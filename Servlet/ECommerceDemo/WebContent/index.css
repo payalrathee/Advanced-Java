@@ -1,0 +1,109 @@
+body
+{
+    background-image: url('bgg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:900px; 
+    color:white;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+#header
+{
+    position:sticky;
+    top:10px;
+}
+#left
+{
+    /* border:2px solid red; */
+    display:inline-block;
+    position:absolute;
+    left:50px;
+    top:10px;
+    
+}
+#right
+{
+    /* border:2px solid red; */
+    width:60%;
+    display:inline-block;
+    position:absolute;
+    right:300px;
+    top:10px;
+    overflow:auto;
+}
+#list
+{
+    list-style-type: none;
+}
+a
+{
+    text-decoration: none;
+    color:white;
+    float:right;
+    margin:2px 15px;
+    text-align: center;
+    font-size: 20px;
+}
+a:hover, a:active{
+    color:rgb(0,0,10);
+}
+img
+{
+    height:60px;
+    width:70px;
+    filter: invert(100%);
+    
+}
+#name
+{
+    margin: 0px;
+    font-size: 43px;
+    position: relative;
+    left: 20px;
+    top: -24px;
+    color: rgb(0,0,0);
+    text-shadow: 1px 1px 9px rgb(0 0 225), 1px 1px 4px rgb(0,0,150);
+}
+#qoute
+{
+    /* border:2px solid red; */
+    position :absolute;
+    top:110px;
+    left:80px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 20px;
+}
+#form
+{
+    position:absolute;
+    top:200px;
+    left:200px;
+}
+input{
+    display:block;
+    margin:10px;
+    height:20px;
+    width:250px;
+}
+#submit
+{
+    background-color: rgb(0,0,10);
+    color:white;
+    width:240px;
+    height: 25px;
+    margin:20px;
+}
+#submit:hover{
+    background-color: rgb(0, 0, 25);
+    color:white;
+}
+legend
+{
+	color:rgb(0,0,25);
+}
+fieldset
+{
+    width:350px;
+    height:300px;
+    
+}

@@ -1,0 +1,25 @@
+@CHARSET "ISO-8859-1";
+body
+{
+	background-image:url('bg.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+div
+{
+	margin:50px;
+	padding:20px;
+}
+a
+{
+	display:block;
+	paddding:8px;
+	margin:10px;
+	color:white;
+	text-decoration:none;
+}
+a:hover
+{
+	color:rgb(0,0,30);
+}
